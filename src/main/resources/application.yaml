@@ -21,13 +21,13 @@ spring:
                 max.in.flight.requests.per.connection: 1
             retries: 3
 
-    consumer:
-        group-id: testGroup
-        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-        # enable-auto-commit = false make sure consumer receive and handle the message successfully then commit the message
-        enable-auto-commit: false
+        consumer:
+            group-id: testGroup
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            # enable-auto-commit = false make sure consumer receive and handle the message successfully then commit the message
+            enable-auto-commit: false
 
-    listener:
-        ack-mode: manual_immediate
+        listener:
+            ack-mode: manual_immediate
 
