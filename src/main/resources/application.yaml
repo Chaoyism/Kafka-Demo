@@ -2,7 +2,7 @@ server:
     port: 8080
 
 kafka:
-    topic: testTopic1
+    topic: topicDemo
 
 min: 1
 max: 99999
