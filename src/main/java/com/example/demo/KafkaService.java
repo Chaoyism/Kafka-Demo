@@ -23,11 +23,11 @@ public class KafkaService {
             }
 
             @Override
-            public void onSuccess(SendResult<String, String> stringStringSendResult) {
+            public void onSuccess(SendResult<String, String> stringSendResult) {
                 System.out.println(String.format("Sent a message to kafka successfully, topic = %s, " +
-                        "partition = %s, value = %s", stringStringSendResult.getProducerRecord().topic(),
-                        stringStringSendResult.getProducerRecord().partition(),
-                        stringStringSendResult.getProducerRecord().value()));
+                        "partition = %s, value = %s", stringSendResult.getProducerRecord().topic(),
+                        stringSendResult.getProducerRecord().partition(),
+                        stringSendResult.getProducerRecord().value()));
             }
         });
     }
