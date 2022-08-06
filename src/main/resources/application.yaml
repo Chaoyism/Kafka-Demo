@@ -5,7 +5,7 @@ kafka:
     topic: topicDemo
 
 min: 1
-max: 99999
+max: 9999999
 
 spring:
     kafka:
